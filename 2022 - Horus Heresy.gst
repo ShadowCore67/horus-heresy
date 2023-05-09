@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="57" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="58" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -15,6 +15,7 @@
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
+    <publication id="e559-8bd2-9937-303f" name="Liber Centura" shortName="Centura" publicationDate="10/12/2022" publisherUrl="https://hh-ageofdarkness.itch.io/libercentura"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -1665,6 +1666,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
       <entryLinks>
         <entryLink id="3790-e8af-d3e2-0dec" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="a149-55c5-23a1-9236" type="selectionEntryGroup"/>
         <entryLink id="e0e7-c67d-a672-77e3" name="Legacy Option" hidden="false" collective="false" import="true" targetId="58be-66fe-3385-cf9c" type="selectionEntryGroup"/>
+        <entryLink id="789a-f6fe-cc9e-a0a9" name="Liber Centura Option" hidden="false" collective="false" import="true" targetId="f44c-17e5-0d6d-0fbd" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -9170,6 +9172,26 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b0a8-0677-cef1-1b5c" name="Gravis Force Weapon" publicationId="e559-8bd2-9937-303f" page="86" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2eda-5c12-fc4c-c21d" name="Gravis Force Weapon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Force</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f38f-79f3-ca36-2d35" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+        <infoLink id="4320-0859-44c1-fcec" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -12420,6 +12442,28 @@ Limitations
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f44c-17e5-0d6d-0fbd" name="Liber Centura Option" publicationId="e559-8bd2-9937-303f" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1f9e-ca23-56cc-5287" name="Centura Units" hidden="false" collective="false" import="true" defaultSelectionEntryId="bab8-d31b-9a17-f63b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a9-f553-17f9-1957" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d3-2820-991b-adcd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bab8-d31b-9a17-f63b" name="Centura Units Off" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f10c-2e17-6ab6-a177" name="Centura Units On" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="26" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="26" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -365,12 +365,17 @@
         <entryLink id="b68c-376d-b2df-be26" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="90da-858e-9bf9-7458" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
+    <entryLink id="90da-858e-9bf9-7458" name="Centurion, Indomitus" hidden="true" collective="false" import="false" targetId="3fe9-d6b9-3e1a-f0a8" type="selectionEntry">
       <comment>    template_id_11b1-c617-441a-9f1a</comment>
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -390,7 +395,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="1583-3791-ad3f-415e" name="Hexagrammaton Choice" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="1583-3791-ad3f-415e" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink id="9ab3-c31b-6807-621d" name="Centurion, Tartaros " hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
@@ -2899,6 +2904,165 @@
         <categoryLink id="45fb-e4f8-ad23-06cc" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="8411-1862-5232-cf37" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="79d4-3bb2-edfa-38dc" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
+      <comment>    template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="21b4-c629-53cf-a054" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9605-5aec-84ae-9299" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="9aa6-442e-71f5-f99b" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5fb5-f683-3530-11e0" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="bb85-3277-2090-6576" type="selectionEntryGroup"/>
+        <entryLink id="9953-d0df-c333-76c6" name="Retinue" hidden="false" collective="false" import="true" targetId="66e9-e8f8-5eb6-1cf6" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7345-311d-297d-29f9" name="Hexagrammaton Choice" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="5956-6419-043c-c749" name="Praetor, Indomitus" hidden="true" collective="false" import="false" targetId="d10a-ae58-12f6-a57f" type="selectionEntry">
+      <comment>    template_id_ca44-db38-4377-b4ef</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="abf6-1169-b164-7df4" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="6194-cf9e-1467-b59e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3bae-b06e-3bc8-e907" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6848-004a-4916-06db" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="bb85-3277-2090-6576" type="selectionEntryGroup"/>
+        <entryLink id="3ace-73b0-708c-8d79" name="Retinue" hidden="false" collective="false" import="true" targetId="66e9-e8f8-5eb6-1cf6" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="5fd4-3600-0219-6005" name="Centurion, Saturnine" hidden="true" collective="false" import="true" targetId="1978-bd76-638b-db29" type="selectionEntry">
+      <comment>    template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="27e2-b016-eb0c-bda3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="654d-a9f4-b708-b2ee" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e8b8-fade-c85f-c39c" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a762-78a9-1ccb-c57b" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="bb85-3277-2090-6576" type="selectionEntryGroup"/>
+        <entryLink id="2604-7bf1-4d25-0aa3" name="Retinue" hidden="false" collective="false" import="true" targetId="66e9-e8f8-5eb6-1cf6" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c797-1e10-efbf-983b" name="Hexagrammaton Choice" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="e82c-4aa9-8b5f-0a71" name="Centurion, Contemptor" hidden="true" collective="false" import="true" targetId="ba6a-90fc-331f-4a4c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="835f-c9c8-4514-469b" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="68f1-b4da-b78b-f29f" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="30bb-77d8-04d5-e127" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c508-9169-2383-2c4a" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="1eb4-8747-c5b2-6d71" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="bb85-3277-2090-6576" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="ae20-22c0-baa6-a70b" name="Centurion, Castra Ferrum" hidden="true" collective="false" import="true" targetId="687e-2d2c-b1e0-2c0d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="027e-95df-dff9-b54a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="b304-a7fd-f404-fab2" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="d751-a058-947c-fff9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c575-927c-c5d0-853e" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="321b-0b0d-43e3-593c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="bb85-3277-2090-6576" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="adad-b614-8ace-6082" name="Land Raider Dionysus" hidden="true" collective="false" import="true" targetId="99ab-223e-a480-a3d3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0502-c0aa-dda6-c107" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="94c2-f2a7-1a6b-1503" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="d27d-fcdd-34b3-e4c0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dccf-2997-9574-7322" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="6898-3061-75da-1eef" name="Land Raider Tartaros" hidden="true" collective="false" import="true" targetId="53f7-4127-4829-87f6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="75a4-7f94-23f1-b370" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="2b5c-52af-dab9-1c84" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="635c-24a7-bb8d-1765" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -6400,6 +6564,20 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d8f8-fba2-5d78-3b69" name="Command Squad, Indomitus" hidden="true" collective="false" import="true" targetId="51c1-c2fa-0af2-057b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10c-2e17-6ab6-a177" type="equalTo"/>
+              </conditions>
             </modifier>
             <modifier type="append" field="name" value="(Reserve Only)">
               <conditions>
